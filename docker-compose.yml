@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+    frontend:
+        volumes:
+            - ./frontend:/frontend
+            - ./certs:/certs
+
+            # necessary to prevent OS X node_modules being loaded in:
+            - /node_modules
+
+        build:
+            context: ./
+            dockerfile: ./frontend/Dockerfile
+
+        ports:
+          - "8080:8080"

@@ -1,0 +1,6 @@
+{
+  "name": "config",
+  "entryPoint": "index.js",
+  "type": "VueJS",
+  "template": "./frontend/templates/default.html"
+}
